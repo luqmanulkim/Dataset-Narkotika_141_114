@@ -2,6 +2,22 @@
 # Dataset Putusan Perkara Narkotika dan Psikotropika
 ### Pengadilan Negeri Tarakan
 
+## 👥 Tim Penyusun
+
+Dataset ini disusun oleh Kelompok 15 untuk memenuhi tugas Ujian Tengah Semester mata kuliah Temu Kembali Informasi.
+
+| No | Nama | NIM |
+|---|---|---|
+| 1 | Luqmanul Hakim | 202310370311141 |
+| 2 | Imam Prayuda | 202310370311114 |
+
+**Institusi:** Universitas Muhammadiyah Malang  
+**Mata Kuliah:** Temu Kembali Informasi  
+**Semester:** Ganjil 2026/2027  
+**Kelas:** D  
+**Kelompok:** 15
+
+
 <p align="center">
   <img src="https://img.shields.io/badge/Dataset-50%20Putusan-blue" />
   <img src="https://img.shields.io/badge/Kategori-Pidana%20Khusus-green" />
@@ -249,21 +265,6 @@ Dataset disusun untuk keperluan pendidikan, pembelajaran, dan penelitian akademi
 Pengguna dataset diharapkan tetap mencantumkan sumber asli dokumen serta memperhatikan ketentuan akses dan penggunaan informasi yang berlaku.
 
 Repository ini tidak dimaksudkan sebagai pengganti dokumen hukum resmi maupun nasihat hukum.
-
-## 👥 Tim Penyusun
-
-Dataset ini disusun oleh Kelompok 15 untuk memenuhi tugas Ujian Tengah Semester mata kuliah Temu Kembali Informasi.
-
-| No | Nama | NIM |
-|---|---|---|
-| 1 | Luqmanul Hakim | 202310370311141 |
-| 2 | Imam Prayuda | 202310370311114 |
-
-**Institusi:** Universitas Muhammadiyah Malang  
-**Mata Kuliah:** Temu Kembali Informasi  
-**Semester:** Ganjil 2026/2027  
-**Kelas:** D  
-**Kelompok:** 15
 
 ---
 
