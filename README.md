@@ -1,95 +1,109 @@
 
-# Dataset Putusan Pengadilan Tindak Pidana Narkotika
-### Pengadilan Negeri Purwokerto
+# Dataset Putusan Perkara Narkotika dan Psikotropika
+### Pengadilan Negeri Tarakan
 
-![Status](https://img.shields.io/badge/Status-Pengumpulan%20Data-orange)
-![Category](https://img.shields.io/badge/Kategori-Pidana%20Khusus-blue)
-![Subject](https://img.shields.io/badge/Topik-Narkotika%20dan%20Psikotropika-green)
+<p align="center">
+  <img src="https://img.shields.io/badge/Dataset-50%20Putusan-blue" />
+  <img src="https://img.shields.io/badge/Kategori-Pidana%20Khusus-green" />
+  <img src="https://img.shields.io/badge/Format-PDF%20%7C%20XLSX-orange" />
+</p>
 
-Repository ini merupakan dokumentasi dan penyimpanan dataset dokumen putusan pengadilan terkait perkara **Narkotika dan Psikotropika** pada Pengadilan Negeri Purwokerto. Dataset dikumpulkan dari Direktori Putusan Mahkamah Agung Republik Indonesia dan dipersiapkan untuk mendukung tugas Ujian Tengah Semester (UTS) mata kuliah Temu Kembali Informasi.
+Repository ini berisi kumpulan dokumen putusan pengadilan terkait perkara **Narkotika dan Psikotropika** yang berasal dari Pengadilan Negeri Tarakan. Dataset dikumpulkan melalui Direktori Putusan Mahkamah Agung Republik Indonesia untuk memenuhi tugas Ujian Tengah Semester (UTS) mata kuliah **Temu Kembali Informasi**.
 
----
-
-## 📌 Daftar Isi
-
-- [Gambaran Umum](#-gambaran-umum)
-- [Tujuan](#-tujuan)
-- [Informasi Dataset](#-informasi-dataset)
-- [Sumber Data](#-sumber-data)
-- [Kriteria Pemilihan Dokumen](#-kriteria-pemilihan-dokumen)
-- [Struktur Repository](#-struktur-repository)
-- [Struktur Metadata](#-struktur-metadata)
-- [Proses Pengumpulan Data](#-proses-pengumpulan-data)
-- [Rencana Pengolahan dan Pengindeksan](#-rencana-pengolahan-dan-pengindeksan)
-- [Contoh Pencarian](#-contoh-pencarian)
-- [Pemeriksaan Kualitas Dataset](#-pemeriksaan-kualitas-dataset)
-- [Batasan Dataset](#-batasan-dataset)
-- [Tim Penyusun](#-tim-penyusun)
+Dataset terdiri dari 50 data putusan yang dilengkapi dengan dokumen PDF dan metadata dalam format Excel. Kumpulan dokumen ini dipersiapkan sebagai korpus dokumen hukum untuk mendukung proses pengolahan data dan penerapan sistem Information Retrieval.
 
 ---
 
-## 📖 Gambaran Umum
+## 📑 Daftar Isi
 
-Dokumen putusan pengadilan merupakan salah satu sumber informasi hukum yang memiliki struktur dan isi cukup kompleks. Di dalamnya terdapat informasi mengenai identitas perkara, kronologi kejadian, pertimbangan hakim, barang bukti, serta amar putusan.
+1. [Tentang Dataset](#-tentang-dataset)
+2. [Tujuan Pengumpulan](#-tujuan-pengumpulan)
+3. [Informasi Dataset](#-informasi-dataset)
+4. [Sumber Data](#-sumber-data)
+5. [Kriteria Pemilihan Dokumen](#-kriteria-pemilihan-dokumen)
+6. [Struktur Repository](#-struktur-repository)
+7. [Struktur Metadata](#-struktur-metadata)
+8. [Contoh Metadata](#-contoh-metadata)
+9. [Tahapan Akuisisi Dataset](#-tahapan-akuisisi-dataset)
+10. [Pemanfaatan Dataset](#-pemanfaatan-dataset)
+11. [Pemeriksaan Kualitas Dataset](#-pemeriksaan-kualitas-dataset)
+12. [Batasan Dataset](#-batasan-dataset)
+13. [Sumber dan Atribusi](#-sumber-dan-atribusi)
+14. [Tim Penyusun](#-tim-penyusun)
 
-Repository ini berfokus pada pengumpulan dokumen putusan perkara narkotika dan psikotropika yang berasal dari Pengadilan Negeri Purwokerto.
+---
 
-Dokumen dikumpulkan dalam format PDF dan dilengkapi dengan metadata yang disusun dalam file Excel. Selanjutnya, dataset dapat dimanfaatkan sebagai korpus dalam pengembangan sistem **Information Retrieval (IR)** atau sistem temu kembali informasi.
+## 📖 Tentang Dataset
 
-## 🎯 Tujuan
+Dataset ini merupakan kumpulan dokumen putusan pengadilan yang berkaitan dengan tindak pidana narkotika dan psikotropika pada Pengadilan Negeri Tarakan.
+
+Setiap dokumen putusan memuat berbagai informasi hukum, antara lain:
+
+- Nomor perkara atau nomor putusan.
+- Lembaga peradilan yang mengeluarkan putusan.
+- Informasi barang bukti.
+- Amar putusan atau hasil keputusan hakim.
+- Informasi lain yang tercantum dalam dokumen putusan.
+
+Informasi utama dari setiap dokumen dicatat dalam file Excel agar memudahkan proses identifikasi, pengelolaan, dan pencarian data.
+
+Dataset ini selanjutnya dapat dimanfaatkan sebagai kumpulan dokumen (document collection) dalam pengembangan sistem temu kembali informasi atau Information Retrieval.
+
+## 🎯 Tujuan Pengumpulan
 
 Pengumpulan dataset ini memiliki beberapa tujuan:
 
-1. Mengumpulkan dokumen putusan perkara narkotika dan psikotropika dari sumber resmi.
-2. Menyediakan kumpulan dokumen hukum dalam format digital PDF.
-3. Menyusun metadata untuk memudahkan identifikasi dan pengelolaan dokumen.
-4. Menyiapkan korpus dokumen untuk proses ekstraksi teks, preprocessing, dan indexing.
-5. Mendukung penerapan metode temu kembali informasi dalam pencarian dokumen putusan hukum.
+1. Mengumpulkan dokumen putusan perkara narkotika dan psikotropika dari sumber resmi Mahkamah Agung Republik Indonesia.
+2. Membentuk kumpulan dokumen hukum dalam format digital PDF.
+3. Menyediakan metadata terstruktur untuk setiap dokumen putusan.
+4. Menyiapkan dataset untuk proses ekstraksi teks dan preprocessing.
+5. Mendukung penerapan metode temu kembali informasi berdasarkan isi dokumen hukum.
+6. Menjadi sumber data untuk pengujian proses pencarian dan pengambilan informasi berdasarkan kata kunci.
 
 ## 📊 Informasi Dataset
 
 | Informasi | Keterangan |
 |---|---|
-| Nama Dataset | Dataset Putusan Narkotika PN Purwokerto |
+| Nama Dataset | Dataset Putusan Narkotika PN Tarakan |
+| Jumlah Data | 50 putusan |
+| Lembaga Peradilan | Pengadilan Negeri Tarakan |
 | Kategori | Pidana Khusus |
 | Subkategori | Narkotika dan Psikotropika |
-| Lembaga Peradilan | Pengadilan Negeri Purwokerto |
-| Sumber | Direktori Putusan Mahkamah Agung RI |
+| Sumber Data | Direktori Putusan Mahkamah Agung RI |
+| Periode Target | 2023–2025 |
 | Format Dokumen | PDF |
 | Format Metadata | XLSX |
-| Target Jumlah Dokumen | 50 dokumen |
 | Bahasa Dokumen | Bahasa Indonesia |
 | Pemanfaatan | Information Retrieval |
 
-**Catatan:** Target pengumpulan adalah 50 dokumen. Jumlah dokumen aktual mengikuti berkas PDF yang berhasil dikumpulkan dan memenuhi kriteria seleksi.
-
 ## 🌐 Sumber Data
 
-Seluruh dokumen putusan diperoleh dari Direktori Putusan Mahkamah Agung Republik Indonesia.
+Seluruh data putusan diperoleh melalui Direktori Putusan Mahkamah Agung Republik Indonesia.
 
 **Sumber utama:**
 
 - [Direktori Putusan Mahkamah Agung RI](https://putusan3.mahkamahagung.go.id/)
-- [Daftar Putusan Narkotika dan Psikotropika PN Purwokerto](https://putusan3.mahkamahagung.go.id/direktori/index/pengadilan/pn-purwokerto/kategori/narkotika-dan-psikotropika-1.html)
+- [Daftar Putusan Narkotika dan Psikotropika PN Tarakan](https://putusan3.mahkamahagung.go.id/direktori/index/pengadilan/pn-tarakan/kategori/narkotika-dan-psikotropika-1.html)
 
-Sumber tersebut digunakan untuk menelusuri informasi perkara dan mengunduh dokumen putusan yang tersedia.
+Sumber tersebut digunakan untuk menelusuri daftar perkara, memeriksa informasi putusan, dan memperoleh dokumen PDF yang tersedia.
 
 ## 📋 Kriteria Pemilihan Dokumen
 
-Dokumen yang dimasukkan ke dalam dataset mengikuti kriteria berikut:
+Dokumen yang dikumpulkan mengikuti kriteria berikut:
 
-1. Dokumen berasal dari Pengadilan Negeri Purwokerto.
+1. Berasal dari Pengadilan Negeri Tarakan.
 2. Termasuk kategori Pidana Khusus.
 3. Termasuk subkategori Narkotika dan Psikotropika.
-4. Dokumen putusan tersedia dan dapat diunduh dalam format PDF.
-5. Mengutamakan putusan pada periode tahun 2023–2025.
-6. Tidak memasukkan putusan dengan status Berkekuatan Hukum Tetap (BHT), sesuai ketentuan tugas.
+4. Berada dalam periode tahun 2023–2025 sesuai ketentuan tugas.
+5. Memiliki nomor putusan yang dapat diidentifikasi.
+6. Dokumen putusan tersedia dalam format PDF.
+7. Tidak termasuk putusan dengan status Berkekuatan Hukum Tetap (BHT), sesuai ketentuan tugas.
 
-Setiap dokumen diperiksa sebelum dimasukkan ke dalam kumpulan dataset.
+Setiap dokumen perlu diperiksa kesesuaiannya dengan kriteria tersebut sebelum digunakan dalam proses penelitian.
 
 ## 📁 Struktur Repository
 
-Repository disusun dengan struktur direktori sebagai berikut:
+Repository ini menggunakan struktur direktori sebagai berikut:
 
 ```text
 Dataset-Narkotika_141_114/
@@ -103,176 +117,142 @@ Dataset-Narkotika_141_114/
 └── README.md
 ```
 
-**Keterangan:**
+### Penjelasan Struktur
 
-| Folder/File | Deskripsi |
+| File/Folder | Keterangan |
 |---|---|
-| `Dataset/` | Menyimpan kumpulan dokumen putusan. |
+| `Dataset/` | Folder penyimpanan kumpulan dokumen putusan. |
 | `Narkotika.zip` | Arsip berisi dokumen putusan dalam format PDF. |
-| `Overview/` | Menyimpan metadata dan ringkasan dokumen. |
-| `Overview.xlsx` | Tabel informasi setiap dokumen putusan. |
-| `README.md` | Dokumentasi repository dan dataset. |
+| `Overview/` | Folder penyimpanan metadata dataset. |
+| `Overview.xlsx` | File Excel berisi informasi 50 putusan. |
+| `README.md` | Dokumentasi mengenai dataset dan repository. |
 
 ## 🗂️ Struktur Metadata
 
-File `Overview.xlsx` digunakan untuk mendokumentasikan informasi penting dari setiap dokumen putusan.
+Metadata dataset disimpan dalam file `Overview.xlsx`. File ini digunakan untuk mencatat informasi utama dari setiap dokumen putusan.
 
-Metadata memiliki kolom sebagai berikut:
+Terdapat lima kolom utama dalam metadata:
 
-| Kolom | Keterangan |
-|---|---|
-| No | Nomor urut dokumen dalam dataset. |
-| No Putusan | Nomor perkara atau nomor putusan pengadilan. |
-| Lembaga Peradilan | Nama pengadilan yang mengeluarkan putusan. |
-| Barang Bukti | Barang bukti yang tercantum dalam dokumen putusan. |
-| Amar Putusan | Ringkasan hasil atau keputusan hakim. |
+| No | Nama Kolom | Deskripsi |
+|---|---|---|
+| 1 | No | Nomor urut setiap data putusan. |
+| 2 | No Putusan | Nomor perkara atau nomor putusan pengadilan. |
+| 3 | Lembaga Peradilan | Nama lembaga peradilan yang mengeluarkan putusan. |
+| 4 | Barang Bukti | Informasi barang bukti yang tercantum dalam dokumen putusan. |
+| 5 | Amar Putusan | Informasi mengenai hasil atau keputusan hakim dalam perkara tersebut. |
 
-Metadata ini membantu proses identifikasi dokumen dan dapat digunakan sebagai informasi pendukung dalam sistem temu kembali informasi.
+Metadata disusun berdasarkan informasi yang tercantum dalam dokumen putusan sehingga setiap baris data dapat ditelusuri kembali ke dokumen sumbernya.
 
-## 🔄 Proses Pengumpulan Data
+## 📝 Contoh Metadata
 
-Pengumpulan dataset dilakukan melalui beberapa tahapan:
+Berikut merupakan contoh dua data putusan yang tercatat dalam `Overview.xlsx`:
 
-1. **Penentuan sumber:** memilih Direktori Putusan Mahkamah Agung sebagai sumber dokumen.
-2. **Pemilihan pengadilan:** menentukan Pengadilan Negeri Purwokerto.
-3. **Penyaringan kategori:** memilih kategori Pidana Khusus dengan subkategori Narkotika dan Psikotropika.
-4. **Pemeriksaan putusan:** memeriksa informasi perkara dan status putusan.
-5. **Pengunduhan dokumen:** mengunduh dokumen putusan yang tersedia dalam format PDF.
-6. **Pengelompokan dokumen:** mengumpulkan berkas PDF ke dalam satu arsip ZIP.
-7. **Pencatatan metadata:** memasukkan informasi perkara ke dalam `Overview.xlsx`.
-8. **Pemeriksaan akhir:** memastikan kesesuaian antara dokumen PDF dan metadata.
+| No | No Putusan | Lembaga Peradilan | Barang Bukti | Amar Putusan |
+|---:|---|---|---|---|
+| 1 | 163/Pid.Sus/2023/PN Tar | PN TARAKAN | 29 (dua puluh sembilan) bungkus plastik bening berisi narkotika jenis sabu; 1 (satu) buah dompet kecil berwarna hitam; 1 (satu) bendel plastik klip bening pembungkus sabu; dan 2 (dua) bungkus plastik sedotan berwarna merah berisi narkotika jenis sabu. | Menyatakan Terdakwa RUSDI alias DAENG REWA Bin ABDULLAH telah terbukti secara sah dan meyakinkan bersalah melakukan tindak pidana secara tanpa hak atau melawan hukum, bermufakat untuk membeli Narkotika Golongan I bukan tanaman. |
+| 2 | 247/Pid.Sus/2023/PN Tar | PN TARAKAN | 1 (satu) bungkus plastik klip bening berisikan narkotika jenis sabu; dan 1 (satu) buah kotak rokok Gudang Garam Surya 16. Barang bukti dirampas untuk dimusnahkan. | Menyatakan Terdakwa Salang Bin (Alm) Caco terbukti secara sah dan meyakinkan bersalah melakukan tindak pidana percobaan atau permufakatan jahat tanpa hak atau melawan hukum menawarkan untuk dijual, menjual, membeli, menerima, menjadi perantara dalam jual beli, menukar, atau menyerahkan Narkotika Golongan I. |
 
-## ⚙️ Rencana Pengolahan dan Pengindeksan
+*Catatan: Contoh di atas menunjukkan format penyajian metadata. Informasi lengkap seluruh putusan tersedia dalam file `Overview.xlsx`.*
 
-Dataset ini dipersiapkan untuk digunakan dalam tahapan pengembangan sistem Information Retrieval.
+## 🔄 Tahapan Akuisisi Dataset
 
-Alur pengolahan dokumen yang direncanakan adalah sebagai berikut:
+Proses pengumpulan dataset dilakukan melalui beberapa tahapan berikut:
 
-```text
-Dokumen Putusan PDF
-        |
-        v
-Ekstraksi Teks
-        |
-        v
-Case Folding
-        |
-        v
-Tokenization
-        |
-        v
-Normalization
-        |
-        v
-Stopword Removal
-        |
-        v
-Stemming
-        |
-        v
-Document Indexing
-        |
-        v
-TF-IDF
-        |
-        v
-Information Retrieval
-        |
-        v
-Hasil Pencarian Dokumen
-```
+**1. Penentuan Sumber Data**
 
-### Tahapan Pengolahan
+Menentukan Direktori Putusan Mahkamah Agung Republik Indonesia sebagai sumber utama pengumpulan dokumen hukum.
 
-**1. Ekstraksi Teks**
+**2. Penentuan Lembaga Peradilan**
 
-Mengambil isi teks dari dokumen PDF agar dapat diproses oleh sistem.
+Memilih Pengadilan Negeri Tarakan sebagai lembaga peradilan yang menjadi sumber dokumen putusan.
 
-**2. Case Folding**
+**3. Pemilihan Kategori Perkara**
 
-Mengubah seluruh karakter teks menjadi huruf kecil untuk menyamakan bentuk kata.
+Memilih kategori Pidana Khusus dengan subkategori Narkotika dan Psikotropika.
 
-**3. Tokenization**
+**4. Penelusuran Dokumen**
 
-Memecah teks menjadi bagian-bagian kata atau token.
+Menelusuri daftar putusan yang tersedia pada Direktori Putusan Mahkamah Agung berdasarkan pengadilan dan kategori perkara yang telah ditentukan.
 
-**4. Normalization**
+**5. Pengumpulan Dokumen PDF**
 
-Menyeragamkan kata yang memiliki variasi penulisan atau bentuk tidak baku.
+Mengunduh dokumen putusan yang tersedia dan sesuai dengan kriteria pengumpulan.
 
-**5. Stopword Removal**
+**6. Pencatatan Metadata**
 
-Menghapus kata-kata umum yang kurang memberikan kontribusi terhadap proses pencarian informasi.
+Mencatat informasi nomor putusan, lembaga peradilan, barang bukti, dan amar putusan ke dalam file Excel.
 
-**6. Stemming**
+**7. Pengelompokan Dataset**
 
-Mengubah kata berimbuhan menjadi bentuk kata dasarnya.
+Mengumpulkan dokumen PDF ke dalam satu arsip ZIP agar lebih mudah disimpan, dikelola, dan didistribusikan.
 
-**7. Indexing**
+**8. Pemeriksaan Dataset**
 
-Menyusun representasi dokumen agar informasi di dalamnya dapat dicari secara lebih efisien.
+Memeriksa kesesuaian informasi metadata dengan dokumen PDF yang menjadi sumber data.
 
-**8. TF-IDF**
+## 🔍 Pemanfaatan Dataset
 
-Memberikan bobot pada kata berdasarkan tingkat kepentingannya dalam dokumen dan keseluruhan kumpulan dokumen.
+Dataset ini dipersiapkan untuk mendukung penerapan sistem Information Retrieval pada dokumen hukum.
 
-**9. Information Retrieval**
+Informasi yang dapat dimanfaatkan sebagai dasar pencarian antara lain:
 
-Melakukan pencarian dokumen berdasarkan kata kunci atau query yang dimasukkan pengguna.
+- Nomor putusan.
+- Informasi barang bukti.
+- Kata kunci dalam amar putusan.
+- Istilah yang berkaitan dengan tindak pidana narkotika.
+- Isi teks dalam dokumen putusan.
 
-## 🔎 Contoh Pencarian
+Dalam proses pengembangan sistem Information Retrieval, dataset ini dapat digunakan sebagai korpus dokumen untuk tahapan:
 
-Dataset ini dapat digunakan untuk menguji pencarian informasi berdasarkan kata kunci yang berkaitan dengan perkara narkotika.
+1. Ekstraksi teks dari dokumen PDF.
+2. Preprocessing teks.
+3. Tokenisasi dan normalisasi.
+4. Stopword removal.
+5. Stemming.
+6. Pembentukan indeks dokumen.
+7. Pembobotan kata menggunakan TF-IDF.
+8. Pencarian dokumen berdasarkan query pengguna.
 
-Contoh query:
-
-| No | Query Pencarian |
-|---|---|
-| 1 | kepemilikan narkotika jenis sabu |
-| 2 | penyalahgunaan narkotika |
-| 3 | barang bukti metamfetamina |
-| 4 | peredaran narkotika golongan I |
-| 5 | tindak pidana narkotika |
-
-Sistem Information Retrieval nantinya diharapkan dapat menampilkan dokumen yang memiliki tingkat relevansi tertinggi terhadap query pengguna.
+Dengan tahapan tersebut, dokumen putusan dapat diproses menjadi kumpulan informasi yang lebih mudah dicari dan ditemukan berdasarkan relevansi terhadap kata kunci.
 
 ## ✅ Pemeriksaan Kualitas Dataset
 
-Untuk menjaga kualitas dataset, dilakukan pemeriksaan terhadap beberapa aspek berikut:
+Pemeriksaan kualitas dilakukan untuk memastikan dataset tersusun dengan baik dan dapat digunakan pada tahap penelitian selanjutnya.
 
-- [ ] Dokumen berasal dari sumber resmi Mahkamah Agung.
-- [ ] Seluruh dokumen sesuai dengan kategori yang ditentukan.
-- [ ] Dokumen PDF dapat dibuka dan dibaca.
-- [ ] Tidak terdapat dokumen duplikat.
-- [ ] Nomor putusan sesuai dengan dokumen PDF.
-- [ ] Metadata telah diisi sesuai informasi pada dokumen.
-- [ ] Status BHT telah diperiksa dan dokumen yang tidak memenuhi kriteria dikeluarkan.
-- [ ] Jumlah dokumen sesuai dengan target pengumpulan.
+- [x] Menentukan Pengadilan Negeri Tarakan sebagai sumber pengadilan.
+- [x] Menentukan kategori Narkotika dan Psikotropika.
+- [x] Mengumpulkan 50 data putusan.
+- [x] Menyusun metadata dalam file `Overview.xlsx`.
+- [ ] Memastikan seluruh dokumen PDF dapat dibuka.
+- [ ] Memeriksa kesesuaian nomor putusan dengan dokumen PDF.
+- [ ] Memeriksa kemungkinan dokumen duplikat.
+- [ ] Memverifikasi status BHT setiap putusan.
+- [ ] Memastikan seluruh dokumen memenuhi ketentuan periode pengumpulan.
 
 ## ⚠️ Batasan Dataset
 
-Beberapa batasan yang perlu diperhatikan:
+Beberapa batasan yang perlu diperhatikan dalam penggunaan dataset:
 
-1. Dataset hanya mencakup putusan dari Pengadilan Negeri Purwokerto.
+1. Dataset hanya mencakup putusan dari Pengadilan Negeri Tarakan.
 2. Dataset dibatasi pada perkara Narkotika dan Psikotropika.
-3. Ketersediaan dokumen bergantung pada berkas yang disediakan oleh Direktori Putusan Mahkamah Agung.
-4. Tidak semua informasi dalam dokumen memiliki format penulisan yang seragam.
-5. Kualitas ekstraksi teks dapat dipengaruhi oleh struktur dan kualitas file PDF.
-6. Metadata merupakan ringkasan informasi yang diambil dari dokumen putusan, bukan pengganti dokumen hukum aslinya.
+3. Ketersediaan dokumen bergantung pada publikasi melalui Direktori Putusan Mahkamah Agung.
+4. Struktur dan gaya penulisan setiap dokumen putusan dapat berbeda.
+5. Kualitas ekstraksi teks dapat dipengaruhi oleh format dan kualitas dokumen PDF.
+6. Metadata merupakan ringkasan informasi dan tidak menggantikan dokumen putusan asli.
 
-## 📜 Sumber, Atribusi, dan Penggunaan
+## 📜 Sumber dan Atribusi
 
-Dokumen putusan dalam repository ini bersumber dari Direktori Putusan Mahkamah Agung Republik Indonesia.
+Seluruh dokumen putusan dalam repository ini bersumber dari Direktori Putusan Mahkamah Agung Republik Indonesia.
 
-Penggunaan dataset ditujukan untuk kepentingan pendidikan, pembelajaran, dan penelitian akademik pada bidang Information Retrieval.
+Dataset disusun untuk keperluan pendidikan, pembelajaran, dan penelitian akademik dalam bidang Information Retrieval.
 
-Pengguna dataset diharapkan tetap mencantumkan sumber resmi dokumen dan memperhatikan ketentuan akses serta penggunaan informasi yang berlaku.
+Pengguna dataset diharapkan tetap mencantumkan sumber asli dokumen serta memperhatikan ketentuan akses dan penggunaan informasi yang berlaku.
 
-Repository ini tidak dimaksudkan sebagai pengganti sumber hukum resmi atau nasihat hukum.
+Repository ini tidak dimaksudkan sebagai pengganti dokumen hukum resmi maupun nasihat hukum.
 
 ## 👥 Tim Penyusun
 
-Dataset ini disusun oleh mahasiswa yang tergabung dalam Kelompok 15 pada mata kuliah Temu Kembali Informasi.
+Dataset ini disusun oleh Kelompok 15 untuk memenuhi tugas Ujian Tengah Semester mata kuliah Temu Kembali Informasi.
 
 | No | Nama | NIM |
 |---|---|---|
@@ -287,17 +267,8 @@ Dataset ini disusun oleh mahasiswa yang tergabung dalam Kelompok 15 pada mata ku
 
 ---
 
-## 📝 Riwayat Pembaruan
-
-| Versi | Keterangan |
-|---|---|
-| 1.0 | Pembuatan repository dan dokumentasi awal dataset. |
-| 1.1 | Penyesuaian sumber pengumpulan menjadi PN Purwokerto. |
-| 1.2 | Penambahan metadata dan dokumentasi tahapan Information Retrieval. |
-
----
-
 <p align="center">
-  <b>Dataset Putusan Narkotika PN Purwokerto</b><br>
+  <b>Dataset Putusan Narkotika dan Psikotropika</b><br>
+  Pengadilan Negeri Tarakan<br>
   Information Retrieval — Kelompok 15
 </p>
