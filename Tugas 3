@@ -1,0 +1,9 @@
+# Tugas 3 - Web Crawling dan Ekstraksi Dokumen Putusan
+
+Folder ini berisi source code dan hasil ekstraksi dokumen putusan perkara narkotika Pengadilan Negeri Tarakan tahun 2023-2025.
+
+## Isi Folder
+- Notebook Google Colab
+- Hasil ekstraksi CSV
+- Dokumen hasil konversi PDF ke TXT
+- Log proses ekstraksi
